@@ -1,4 +1,4 @@
-<!-- <h1>this is footer</h1> -->
+<!-- <h1>this is footer</h1>
 <div class="card">
   <div class="card-header">
     Quote
@@ -9,4 +9,4 @@
       <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
-</div>
+</div> -->

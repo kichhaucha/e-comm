@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\usercontroller;
-use App\http\Controllers\product;
+use App\http\Controllers\userproduct;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,11 @@ Route::get('/login', function () {
 });
 // Route::view('/login','login');
 Route::post('/login',[usercontroller::class,'login']);
-Route::get('/',[product::class,'index']);
+Route::get('/',[userproduct::class,'index']);
+Route::get('/det/{id}',[userproduct::class,'detail']);
+Route::get('search',[userproduct::class,'search']);
+Route::post('/cart',[userproduct::class,'addtocart']);
+
 
 // Route::get('/login', function () {
 //     if(session()->has('user')){
@@ -28,3 +33,6 @@ Route::get('/',[product::class,'index']);
 //     }
 //     return view('login');
 // });
+
+
+?>
