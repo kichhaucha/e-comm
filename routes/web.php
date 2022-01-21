@@ -31,6 +31,8 @@ Route::get('/',[userproduct::class,'index']);
 Route::get('/det/{id}',[userproduct::class,'detail']);
 Route::get('search',[userproduct::class,'search']);
 Route::post('/cart',[userproduct::class,'addtocart']);
+Route::get('/cartlist',[userproduct::class,'cartList']);
+Route::get('remove/{id}',[userproduct::class,'removeList']);
 
 
 // Route::get('/login', function () {

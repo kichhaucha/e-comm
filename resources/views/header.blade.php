@@ -23,7 +23,7 @@
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link mx-4" href="#">cart({{$value}})</a>
+          <a class="nav-link mx-4" href="cartlist">cart({{$value}})</a>
         </li>
     
    <div class="mx-4" >
