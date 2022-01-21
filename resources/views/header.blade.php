@@ -19,7 +19,7 @@
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">order</a>
+        <a class="nav-link active" aria-current="page" href="/myorder">My-order</a>
         </li>
 
         <li class="nav-item ">
@@ -40,6 +40,7 @@
   @else
   <li class="nav-item ">
     <a href="/login" class="text-primary my-4 mx-5" role="button">login</a>
+    <a href="/signup" class="text-primary my-4 mx-5" role="button">signup</a>
   </li>
   @endif
 

@@ -1,5 +1,7 @@
 @extends('master')
 @section('content')
+
+<a href="order" class="btn btn-success mx-4">Order-Now</a>
 <a href="/"> <h3>Go-Back</h3> </a>
 
 @foreach ($user as $item)
@@ -29,11 +31,17 @@
     
     @endforeach
  
+    <a href="order" class="btn btn-success mx-4">Order-Now</a>
     <a href="/"> <h3>Go-Back</h3> </a>
 
+   
   @endsection
 
 
  
 
   
+
+
+
+   

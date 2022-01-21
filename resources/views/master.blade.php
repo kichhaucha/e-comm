@@ -56,6 +56,7 @@
     margin-left:43vh;
 
   }
+
   .trending{
     float:left;
     width:20%;

@@ -20,6 +20,10 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/signup', function () {
+    return view('signup');
+});
+
 Route::get('/logout', function () {
      Session::forget('user');
     return redirect('/login');
@@ -27,12 +31,18 @@ Route::get('/logout', function () {
 
 // Route::view('/login','login');
 Route::post('/login',[usercontroller::class,'login']);
+Route::post('/signup',[usercontroller::class,'signUp']);
+
 Route::get('/',[userproduct::class,'index']);
 Route::get('/det/{id}',[userproduct::class,'detail']);
 Route::get('search',[userproduct::class,'search']);
 Route::post('/cart',[userproduct::class,'addtocart']);
 Route::get('/cartlist',[userproduct::class,'cartList']);
 Route::get('remove/{id}',[userproduct::class,'removeList']);
+Route::get('/order',[userproduct::class,'orderNow']);
+Route::POST('/orderplace',[userproduct::class,'Datat']);
+Route::get('/myorder',[userproduct::class,'myOrder']);
+
 
 
 // Route::get('/login', function () {
